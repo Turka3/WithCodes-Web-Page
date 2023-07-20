@@ -1,0 +1,227 @@
+/* General Settings */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Scroll Remowe */
+::-webkit-scrollbar {
+  display: none;
+  visibility: hidden;
+  opacity: 0
+}
+
+/* Page Position */
+.App {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#Logo-text {
+  display: block;
+  background-color: #850202;
+  color: rgb(220, 178, 178);
+  font-size: large;
+  text-decoration: none;
+}
+
+#Logo-text:hover {
+  opacity: 0.6;
+}
+
+/* Navbar Settings */
+nav {
+  background-color: #080606;
+  height: auto;
+  padding: 30px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 35px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #cac0c0;
+  font-size: large;
+}
+
+nav ul li a:hover {
+  opacity: 0.6;
+}
+
+/* Section between settings */
+section {
+  margin: 50px 0;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  color: black;
+}
+
+#copyright {
+  color: #666;
+}
+
+/* Footer Settings */
+footer {
+  width: 100%;
+  background-color: #080606; /*f5f5f5*/
+  padding: 1px;
+}
+
+footer nav ul {
+  justify-content: center;
+}
+
+footer nav ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu-responsive {
+  display: none;
+}
+
+.button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 5px 15px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.dark-theme {
+  background-color: #333;
+  color: black;  
+}
+
+.menu-button {
+  float: right;
+  margin-left: auto;
+  display: none;
+  background: black;
+  color: #fef8f8;
+  border-radius: 20px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.menu-icon {
+  width: 20px;
+  height: 2px;
+  background: #fff;
+  margin: 4px 0;
+}
+
+.menu-icon.open {
+  background: transparent;
+}
+
+#copyLuka {
+  text-decoration: none;
+}
+
+#copyLuka:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+
+@media (max-width: 768px) {
+
+  .menu-responsive {
+    display: inline-block;
+    color: #fff;
+    position: relative;
+    left: 20px;
+  }
+
+  .button {
+    text-align: center;
+    background: #080606;
+    color: #fef8f8;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .menu-icon {
+    background: #000;
+  }
+
+  .menu-icon.open {
+    background: #000;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-menu.open {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  header nav ul li {
+    width: calc(35.00% - 80px);
+    margin-bottom: 20px;
+    margin: 25px;
+  }
+}
+
+@media (max-width: 500px) {
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  header nav ul li {
+    width: calc(35.00% - 42px);
+    margin-bottom: 20px;
+    margin: 15px;
+  }
+}
